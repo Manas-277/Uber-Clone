@@ -20,7 +20,8 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        minlength: [5, "email should be atleast 5 characters long"]
+        minlength: [5, "email should be atleast 5 characters long"],
+        match: [/\S+@\S+\.\S+/, "Please enter a valid email address"]
     },
     password: {
         type: String,
