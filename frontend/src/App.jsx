@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import UserLogin from './pages/UserLogin.jsx'
@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <Routes>
-        <Route path='/home' element = {<Home/>} />
+        <Route path='/' element = {<Home/>} />
         <Route path='/login' element = {<UserLogin/>} />
         <Route path='/signup' element = {<UserSignup/>} />
         <Route path='/captain-login' element = {<CaptainLogin/>} />
